@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    180deg,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  background-repeat: no-repeat;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  /* padding: 20px; */
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(237, 12%, 33%);
+}
+
+p {
+  font-size: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 920px;
+  width: 920px;
+  height: 520px;
+  padding: 40px 0;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 1260% 65%;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-gap: 6rem;
+}
+
+.container__image {
+  background-image: url(./images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 130% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.container__last__child {
+  width: 340px;
+  margin-top: 30px;
+}
+
+.container__first__child {
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  top: 41%;
+  left: -25%;
+}
+
+.accordion__question__answer {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer {
+  display: none;
+  margin: 0;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.9s ease-in-out;
+}
+
+.accordion__question {
+  border-bottom: 1px solid #e8e8ea;
+  padding: 2px 0;
+}
+
+.active img {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 880px) {
+  body {
+    padding: 40px;
+  }
+  .container {
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 620px;
+    width: 400px;
+    max-width: 480px;
+    min-height: 600px;
+    padding: 0 25px;
+    position: relative;
+  }
+
+  .container__image {
+    display: none;
+  }
+
+  .container__first__child {
+    background-image: url(./images/illustration-woman-online-mobile.svg);
+    background-position: 100% 10%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -24%;
+    right: 77px;
+  }
+
+  .container__last__child {
+    width: 330px;
+    margin-top: 30px;
+  }
+
+  .accordion__question {
+    border-bottom: 1px solid #e8e8ea;
+    padding: 8px 0;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .box {
+    display: none;
+  }
+}
