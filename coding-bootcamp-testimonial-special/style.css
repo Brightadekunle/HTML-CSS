@@ -1,0 +1,205 @@
+:root {
+  --DarkBlue: hsl(240, 38%, 20%);
+  --GrayishBlue: hsl(240, 18%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Raleway";
+  background-image: url(./images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding: 0 100px;
+}
+
+.container {
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container > div {
+  flex: 1;
+}
+
+.container > div:first-child {
+  z-index: 10;
+}
+
+.image_background {
+  background-image: url(./images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  position: absolute;
+  top: -85%;
+  left: 40%;
+  transform: translateX(-165px) translateY(40px) scale(0.7);
+}
+
+.image__background__box {
+  background-image: url(./images/image-tanya.jpg);
+  background-repeat: no-repeat;
+  width: 70%;
+  height: 1000px;
+  position: absolute;
+  top: -69%;
+  right: -2%;
+  transform: scale(0.7);
+}
+
+.box__background {
+  position: relative;
+}
+
+.arrow_box {
+  height: 65px;
+  width: 110px;
+  background-color: #fff;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 70px;
+  top: 510px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.prev {
+  background-image: url(./images/icon-prev.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 40%;
+  left: 15%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.prev:hover {
+  transform: scale(1.1);
+}
+
+.next {
+  background-image: url(./images/icon-next.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 40%;
+  right: -73%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.description__detail {
+  font-size: 24px;
+  line-height: 42px;
+  color: var(--DarkBlue);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.description {
+  position: relative;
+}
+
+.description__detail__quote {
+  background-image: url(./images/pattern-quotes.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10%;
+  right: -100px;
+}
+
+.name {
+  color: var(--GrayishBlue);
+  font-size: 18px;
+}
+
+.name span {
+  color: var(--DarkBlue);
+  font-weight: 700;
+  margin-right: 7px;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 510px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .container > div:first-child {
+    width: 80%;
+    text-align: center;
+  }
+
+  .image_background {
+    position: absolute;
+    height: 500px;
+    width: 1000px;
+    height: 1000px;
+    top: -600px;
+    left: -150px;
+    transform: scale(0.6);
+  }
+
+  .image__background__box {
+    position: absolute;
+    top: -570px;
+    left: -110px;
+    height: 1000px;
+    width: 1000px;
+    transform: scale(0.58);
+    /* text-align: center; */
+  }
+
+  .description {
+    position: absolute;
+    bottom: -350px;
+  }
+
+  .description__detail {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .description__detail__quote {
+    transform: scale(0.7) translateX(-10px) translateY(-33px);
+  }
+
+  .name {
+    margin-top: 30px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name span {
+    margin-bottom: 8px;
+  }
+
+  .image__background {
+    position: absolute;
+    top: -15%;
+    width: 500px;
+    height: 40%;
+  }
+  .arrow_box {
+    left: 200px;
+    transform: scale(1.3);
+  }
+}
