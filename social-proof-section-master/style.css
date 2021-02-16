@@ -10,6 +10,31 @@ body {
   min-height: 90vh;
 }
 
+body::before {
+  content: "";
+  background-image: url(./images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 5% right;
+  background-size: contain;
+  position: absolute;
+  top: 2px;
+  right: 60%;
+  width: 700px;
+  height: 700px;
+}
+
+body::after {
+  content: "";
+  background-image: url(./images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 60% 10%;
+  background-size: contain;
+  position: absolute;
+  bottom: -400px;
+  width: 1000px;
+  height: 1000px;
+}
+
 h1 {
   font-size: 38px;
   line-height: 40px;
@@ -100,7 +125,7 @@ h3 {
   margin-top: 10px;
   border-radius: 8px;
   padding: 2px 25px;
-  width: 380px;
+  width: 370px;
 }
 
 .rated {
