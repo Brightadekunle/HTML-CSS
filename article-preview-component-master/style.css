@@ -47,6 +47,28 @@ h3 {
   align-items: center;
   /* justify-content: center; */
 }
+
+.flex__d {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  /* background-color: hsl(214, 17%, 51%); */
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle img {
+  /* filter: brightness(0) invert(1); */
+}
 .shift {
   padding: 15px 35px;
   margin-top: 0;
