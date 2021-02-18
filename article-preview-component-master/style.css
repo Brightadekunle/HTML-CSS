@@ -12,23 +12,86 @@ body {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 12px;
 }
 
 .container {
-  width: 650px;
-  height: 280px;
-  padding: 30px;
+  max-width: 650px;
+  height: 250px;
   background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0;
 }
 
 .flex {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+}
+
+.flex__c {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.shift {
+  padding: 15px 35px;
+  margin-top: 0;
+}
+
+.shift p {
+  font-size: 13px;
+  margin-top: 7px;
 }
 
 .drawer__img {
-  width: 500px;
-  height: 100%;
+  width: 230px;
+  height: 260px;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+
+.ceo__picture {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+p.date {
+  margin-top: 0;
+  font-size: 11px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex__c > div:last-child {
+    margin: 15px 0 5px;
+  }
+
+  .container {
+    width: 375px;
+    height: auto;
+  }
+
+  .drawer__img {
+    width: 100%;
+  }
 }
