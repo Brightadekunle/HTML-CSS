@@ -39,7 +39,7 @@ h2 {
 
 .flex {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -206,4 +206,18 @@ nav ul li a {
 
 .down__2 {
   transform: translateY(60px);
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+.flex__d {
+  display: flex;
+  align-items: center;
 }
