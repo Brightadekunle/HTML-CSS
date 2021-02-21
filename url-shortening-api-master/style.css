@@ -33,7 +33,7 @@ h2 {
 .container {
   padding: 30px 100px;
   width: 1200px;
-  /* max-width: 100%; */
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -213,11 +213,41 @@ footer {
   color: #fff;
 }
 
-footer ul li {
-  list-style: none;
+footer ul {
+  padding-left: 0;
+  margin-right: 60px;
 }
 
-.flex__d {
+footer ul li {
+  color: #b2beb5;
+  font-size: 13px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer ul li:first-child {
+  color: #fff;
+}
+
+ul img {
+  margin-right: 50px;
+}
+
+.logo__white {
+  filter: invert(1);
+  transform: scale(0.8);
+}
+
+.flex__a {
   display: flex;
-  align-items: center;
+}
+
+.social__media {
+  display: flex;
+}
+
+.social__media img {
+  margin-right: 13px;
+  fill: #fff;
+  transform: scale(0.9);
 }
