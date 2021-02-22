@@ -58,7 +58,6 @@ span {
   width: 370px;
   border-radius: 13px;
   background-color: #fff;
-  /* padding: 30px; */
   text-align: center;
   position: relative;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.06);
@@ -109,23 +108,11 @@ span {
   }
   body::before {
     content: "";
-    background-image: url(./images/bg-pattern-top.svg);
-    background-repeat: no-repeat;
-    /* background-position: top left; */
-    height: 1000px;
-    width: 1000px;
-    position: absolute;
     top: -600px;
     left: -600px;
   }
 
   body::after {
-    content: "";
-    background-image: url(./images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat;
-    height: 1000px;
-    width: 1000px;
-    position: absolute;
     bottom: -600px;
     right: -600px;
     z-index: -1;
