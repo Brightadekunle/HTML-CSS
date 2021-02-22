@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  background-image: url(./images/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 1000px;
+  width: 1000px;
+  position: absolute;
+  top: -500px;
+  left: -200px;
+}
+
+body::after {
+  content: "";
+  background-image: url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  height: 1000px;
+  width: 1000px;
+  position: absolute;
+  bottom: -600px;
+  right: -200px;
+  z-index: -1;
+}
+
+h3 {
+  color: hsl(229, 23%, 23%);
+  margin: 15px 0 10px 0;
+  font-size: 18px;
+}
+
+p {
+  margin: 5px;
+  color: hsl(229, 23%, 23%);
+}
+
+span {
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.container {
+  width: 370px;
+  border-radius: 13px;
+  background-color: #fff;
+  /* padding: 30px; */
+  text-align: center;
+  position: relative;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  background-image: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 40%;
+  width: 100%;
+  transform: translateY(-10px);
+  z-index: 10;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  border-top: 1px solid hsl(225, 4%, 78%);
+  padding: 20px 40px;
+}
+
+.image__victor {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  margin-top: 105px;
+  position: relative;
+  z-index: 100;
+  border: 6px solid #fff;
+}
+
+.follower {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: hsl(229, 23%, 23%);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    position: relative;
+  }
+  body::before {
+    content: "";
+    background-image: url(./images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    /* background-position: top left; */
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    top: -600px;
+    left: -600px;
+  }
+
+  body::after {
+    content: "";
+    background-image: url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    bottom: -600px;
+    right: -600px;
+    z-index: -1;
+  }
+}
