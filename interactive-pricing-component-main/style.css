@@ -20,20 +20,169 @@ body::before {
   height: 2000px;
   width: 1600px;
   position: absolute;
-  top: -130px;
+  top: -180px;
   z-index: -1;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.heading {
+  width: 450px;
+  margin: 100px auto;
+  text-align: center;
+  position: relative;
+}
+
+.heading::before {
+  content: "";
+  background-image: url(./images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  position: absolute;
+  left: 140px;
+  top: -30px;
+  width: 100%;
+  height: 1000px;
+  z-index: -1;
+}
+
+.heading p {
+  font-size: 17px;
+  margin-top: 0;
+  font-weight: 600;
+}
+
 .container {
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  width: 590px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.flex__a {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.bottom {
+  padding: 30px 60px;
+  margin: 0;
+  border-top: 1px solid hsl(223, 50%, 87%);
+}
+
+.bottom p {
+  padding: 0;
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.bottom img {
+  transform: scale(1.2);
+  margin-right: 10px;
+}
+
+button {
+  background-color: hsl(227, 35%, 25%);
+  border: none;
+  border-radius: 50px;
+  padding: 13px 45px;
+  color: #fff;
+  font-family: "Manrope";
+  font-size: 14px;
+}
+
+.top {
+  padding: 40px 60px;
+  margin: 0;
+}
+
+.top p {
+  font-weight: 600;
+}
+
+.price__dollars {
+  font-size: 46px;
+  font-weight: 800;
+}
+
+.price p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price__discount {
+  margin-left: 10px;
+  font-size: 9px;
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  padding: 3px 7px;
+  border-radius: 30px;
+  font-weight: 800;
+}
+
+.toggle {
+  float: right;
+  margin-bottom: 50px;
+}
+
+.toggle__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.toggle__container label {
+  background-color: hsl(223, 50%, 87%);
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  position: relative;
+  margin: 7px 15px 0;
+}
+
+.toggle__container span {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.toggle__container label .ball {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 2.6px;
+  left: 2.5px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.toggle__container input {
+  position: absolute;
+  left: -999px;
+}
+
+.toggle__container input:checked + label .ball {
+  /* left: auto; */
+  transform: translateX(30px);
 }

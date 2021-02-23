@@ -11,51 +11,62 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
+  <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+  </style>
 </head>
 <body>
 
-  <div>
+  <div class="heading">
     
-    <h3>
+    <h1>
       Simple, traffic-based pricing
-    </h3>
+    </h1>
     <p>
       Sign-up for our 30-day trial. No credit card required. 
     </p>
   </div>
 
   <div class="container">
-    <div class="flex">
-      <div>
-        <h4>100k pageviews</h4>
-      </div>
-      <div>
-        <p>$16.00 <span>/month</span></p>
-      </div>
-    </div>
-
-    <div class="progress__bar"></div>
-
-    <div class="billing">
-
-    </div>
-
-    <div>
+    <div class="top">
       <div class="flex">
         <div>
-          <div class="flex">
+          <h4>100k pageviews</h4>
+        </div>
+        <div class="price">
+          <p><span class="price__dollars">$16.00 </span> / month</p>
+        </div>
+      </div>
+  
+      <div class="progress__bar"></div>
+  
+      <div class="toggle__container">
+          <span>Monthly Billing</span>
+          <span>
+            <label for="toggle">
+              <div class="ball"></div>
+            </label>
+            <input type="checkbox" name="toggle" id="toggle" unchecked />
+          </span>
+          <span>Yearly Billing</span>
+    
+          <span class="price__discount">25% discount</span>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="flex">
+        <div>
+          <div class="flex__a">
             <img src="./images/icon-check.svg" alt="">
             <p>Unlimited websites</p>
           </div>
-          <div class="flex">
+          <div class="flex__a">
             <img src="./images/icon-check.svg" alt="">
             <p>100% data ownership</p>
           </div>
-          <div class="flex">
+          <div class="flex__a">
             <img src="./images/icon-check.svg" alt="">
             <p>Email reports</p>
           </div>
@@ -65,22 +76,12 @@
         </div>
       </div>
     </div>
-
     
   </div>
-
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-
   
-
-  
-  
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Bright Adegoke</a>.
+  </div> -->
 </body>
 </html>
