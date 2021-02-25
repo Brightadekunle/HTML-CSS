@@ -136,7 +136,7 @@ button {
   background-color: hsl(14, 92%, 95%);
   padding: 3px 7px;
   border-radius: 30px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .toggle {
@@ -230,5 +230,28 @@ button {
 
   button {
     margin-top: 30px;
+  }
+
+  .progress__bar {
+    transform: translateY(-100px);
+  }
+
+  .price {
+    transform: translateY(40px);
+  }
+
+  .price__discount strong {
+    display: none;
+  }
+
+  .toggle__container {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .toggle__container label .ball {
+    position: absolute;
+    top: 3px;
+    left: 2.5px;
   }
 }
