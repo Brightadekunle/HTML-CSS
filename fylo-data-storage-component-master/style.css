@@ -24,7 +24,7 @@ h3 {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -33,6 +33,12 @@ h3 {
 }
 
 .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex__a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -156,4 +162,60 @@ h3 {
   right: 1px;
   margin: 1px 0;
   background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+  }
+  .container {
+    width: 400px;
+  }
+
+  .flex__a {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .right {
+    width: 400px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .message {
+    position: absolute;
+    top: 105px;
+    right: 110px;
+    padding: 10px 25px;
+  }
+
+  .message p {
+    font-size: 14px;
+  }
+
+  .message span {
+    font-size: 48px;
+  }
+
+  .icon__images {
+    width: 180px;
+  }
+
+  .icon__folder {
+    margin: 0;
+  }
 }
