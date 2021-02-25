@@ -9,6 +9,7 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
+  height: 100vh;
 }
 
 body::before {
@@ -17,7 +18,7 @@ body::before {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top left;
-  height: 2000px;
+  height: 100%;
   width: 1600px;
   position: absolute;
   top: -180px;
@@ -43,16 +44,14 @@ h4 {
   position: relative;
 }
 
-.heading::before {
-  content: "";
+.rounded__circle {
   background-image: url(./images/pattern-circles.svg);
   background-repeat: no-repeat;
-  /* background-position: center center; */
   position: absolute;
   left: 140px;
   top: -30px;
   width: 100%;
-  height: 1000px;
+  height: 100%;
   z-index: -1;
 }
 
@@ -63,7 +62,7 @@ h4 {
 }
 
 .container {
-  width: 590px;
+  width: 560px;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 10px;
@@ -83,7 +82,7 @@ h4 {
 }
 
 .bottom {
-  padding: 30px 60px;
+  padding: 28px 50px;
   margin: 0;
   border-top: 1px solid hsl(223, 50%, 87%);
 }
@@ -111,7 +110,7 @@ button {
 }
 
 .top {
-  padding: 40px 60px;
+  padding: 40px 50px;
   margin: 0;
 }
 
@@ -149,6 +148,7 @@ button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 40px;
 }
 
 .toggle__container label {
@@ -183,6 +183,42 @@ button {
 }
 
 .toggle__container input:checked + label .ball {
-  /* left: auto; */
   transform: translateX(30px);
+}
+
+.progress__bar {
+  width: 100%;
+  background-color: hsl(224, 65%, 95%);
+  border-radius: 40px;
+  height: 8px;
+  margin: 20px 0;
+}
+
+.progress__bar label .progress {
+  border-radius: 40px;
+  width: 50%;
+  height: 8px;
+  background-color: hsl(174, 77%, 80%);
+  position: relative;
+}
+
+.progress__bar label .progress .slider__bar {
+  /* position: absolute; */
+  top: -200%;
+  left: 100%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: hsl(174, 86%, 45%);
+  position: relative;
+}
+
+.slider__image {
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
