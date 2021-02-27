@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.container {
+  background-image: url(./images/pattern-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  text-align: center;
+  padding: 30px;
+}
+
+.search__box {
+  position: relative;
+  width: 600px;
+  margin: 10px auto;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  padding: 30px;
+  height: 60px;
+  width: 60px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container input {
+  font-family: "Rubik", sans-serif;
+  /* margin-top: 25px; */
+  width: 500px;
+  border-radius: 16px;
+  padding: 20px 25px;
+  border: none;
+  height: 60px;
+}
+
+.container p {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  color: hsl(0, 0%, 59%);
+  font-size: 18px;
+}
+
+.container input:focus {
+  outline: none;
+}
+
+.flex {
+  transform: translateY(-80px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #111;
+  padding: 30px 70px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.flex > div {
+  border-right: 1px solid hsl(0, 0%, 59%);
+  padding-left: 10px;
+  padding-right: 30px;
+}
+.container__two {
+}
