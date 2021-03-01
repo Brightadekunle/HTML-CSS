@@ -14,6 +14,14 @@ h1 {
   font-weight: 500;
 }
 
+h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 2px;
+  margin-top: 0;
+}
+
 .container {
   background-image: url(./images/pattern-bg.png);
   background-repeat: no-repeat;
@@ -26,7 +34,7 @@ h1 {
 .search__box {
   position: relative;
   width: 600px;
-  margin: 10px auto;
+  margin: 26px auto;
 }
 
 .arrow {
@@ -34,8 +42,8 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #111;
-  padding: 30px;
-  height: 60px;
+  padding: 28px;
+  height: 20px;
   width: 60px;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -47,17 +55,17 @@ h1 {
 .container input {
   font-family: "Rubik", sans-serif;
   /* margin-top: 25px; */
-  width: 500px;
+  width: 600px;
   border-radius: 16px;
   padding: 20px 25px;
   border: none;
-  height: 60px;
+  height: 55px;
 }
 
 .container p {
   position: absolute;
   top: 0;
-  left: 70px;
+  left: 30px;
   color: hsl(0, 0%, 59%);
   font-size: 18px;
 }
@@ -69,20 +77,58 @@ h1 {
 .flex {
   transform: translateY(-80px);
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   border-radius: 10px;
   background-color: #fff;
   color: #111;
-  padding: 30px 70px;
-  width: 1000px;
+  padding: 32px 3px 13px 3px;
+  width: 1200px;
   margin: 0 auto;
+  box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.06);
 }
 
-.flex > div {
-  border-right: 1px solid hsl(0, 0%, 59%);
-  padding-left: 10px;
-  padding-right: 30px;
+.detail {
+  padding: 0 45px 0 30px;
 }
-.container__two {
+
+.detail__first {
+  margin-left: 0;
+  padding: 0 60px 0 30px;
+}
+
+.detail__third p {
+  width: 200px;
+}
+
+.detail__last {
+  margin-left: 0;
+  padding: 0 120px 0 25px;
+}
+
+.container__two p {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.border {
+  height: 80px;
+  background-color: hsl(0, 0%, 59%);
+  width: 1px;
+  opacity: 0.5;
+  margin-top: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .search__box {
+    width: 375px;
+  }
+
+  .container input {
+    width: 375px;
+  }
+  .flex {
+    width: 375px;
+    flex-direction: column;
+  }
 }
