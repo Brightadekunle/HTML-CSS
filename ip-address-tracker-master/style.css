@@ -135,7 +135,12 @@ h2 {
   }
 
   .container {
-    height: 330px;
+    height: 350px;
+  }
+
+  .container p {
+    font-size: 15px;
+    top: 3px;
   }
   .search__box {
     width: 395px;
@@ -150,7 +155,7 @@ h2 {
     align-items: center;
     text-align: center;
     height: 375px;
-    margin-top: -85px;
+    margin-top: -105px;
   }
 
   .detail__last {
