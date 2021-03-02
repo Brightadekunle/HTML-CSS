@@ -22,6 +22,16 @@ h2 {
   margin-top: 0;
 }
 
+.background {
+  position: relative;
+}
+
+.first__container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .container {
   background-image: url(./images/pattern-bg.png);
   background-repeat: no-repeat;
@@ -78,10 +88,10 @@ h2 {
   transform: translateY(-80px);
   display: flex;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 14px;
   background-color: #fff;
   color: #111;
-  padding: 32px 3px 13px 3px;
+  padding: 35px 3px 14px 3px;
   width: 1200px;
   margin: 0 auto;
   box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.06);
@@ -120,15 +130,30 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  .container {
+    height: 330px;
+  }
   .search__box {
-    width: 375px;
+    width: 395px;
   }
 
   .container input {
-    width: 375px;
+    width: 395px;
   }
   .flex {
-    width: 375px;
+    width: 395px;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 375px;
+    margin-top: -85px;
+  }
+
+  .detail__last {
+    padding: 0 45px 0 30px;
   }
 }
