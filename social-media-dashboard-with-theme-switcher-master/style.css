@@ -39,6 +39,10 @@ img {
   align-items: center;
 }
 
+/* .flex img {
+  margin: 0;
+} */
+
 .flex__space__between {
   display: flex;
   justify-content: space-between;
@@ -46,7 +50,7 @@ img {
 }
 
 .pale__blue {
-  padding: 18px 30px;
+  padding: 10px 25px;
   width: 260px;
   text-align: center;
   background-color: hsl(228, 28%, 20%);
@@ -74,6 +78,8 @@ img {
 .today {
   font-size: 13px;
   margin-left: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .names {
@@ -84,4 +90,39 @@ img {
 
 .down {
   margin-bottom: 30px;
+}
+
+.views {
+  font-size: 14px;
+  color: hsl(228, 34%, 66%);
+  font-weight: 600;
+}
+
+.view__number {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.view__percent {
+  font-size: 11px;
+  color: hsl(163, 72%, 41%);
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.view__percent__red {
+  color: hsl(356, 69%, 56%);
+}
+
+.view__number {
+  margin: 0 0 5px;
+}
+
+.num__percent {
+  margin-top: 15px;
+  padding-bottom: 5px;
+}
+
+.arrow {
+  width: 8px;
 }
