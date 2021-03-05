@@ -15,72 +15,81 @@
 <body>
 
   <div class="container">
-    <div class="flex__space__between">
+    <div class="flex__space__between social__media__dashboard">
       <div class="">
         <h2>social media dashboard</h2>
         <p>Total Followers: 23,004</p>
       </div>
       <div>
         <div class="flex">
-          <h3>Dark mode</h3>
-          <div class="toggle__container"></div>
+          <h3 class="dark__mode">Dark mode</h3>
+          <div class="toggle__container">
+            <span></span>
+            <span>
+              <label for="toggle">
+                <div class="ball"></div>
+              </label>
+              <input type="checkbox" name="toggle" id="toggle" unchecked/>
+            </span>
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
   
-    <div class="flex__space__between">
-      <div class="pale__blue blue__top">
+    <div class="flex__two">
+      <div class="pale__blue box box-desaturated-blue down">
         <div class="flex">
           <img src="./images/icon-facebook.svg" alt="">
           <p class="names">@nathanf</p>
         </div>
         <h1>1987</h1>
         <p class="context">Followers</p>
-        <div class="flex">
+        <div class="flex stats__today">
           <img class="arrow" src="./images/icon-up.svg" alt="">
           <p class="today">12 Today</p>
         </div>
       </div>
-      <div class="pale__blue">
+      <div class="pale__blue box box-desaturated-blue down">
         <div class="flex">
           <img src="./images/icon-twitter.svg" alt="">
           <p class="names">@nathanf</p>
         </div>
         <h1>1044</h1>
         <p class="context">Followers</p>
-        <div class="flex">
+        <div class="flex stats__today">
           <img class="arrow" src="./images/icon-up.svg" alt="">
           <p class="today">99 Today</p>
         </div>
       </div>
-      <div class="pale__blue">
+      <div class="pale__blue box box-gradient down">
         <div class="flex">
           <img src="./images/icon-instagram.svg" alt="">
           <p class="names">@realnathanf</p>
         </div>
         <h1>11K</h1>
         <p class="context">Followers</p>
-        <div class="flex">
+        <div class="flex stats__today">
           <img class="arrow" src="./images/icon-up.svg" alt="">
           <p class="today">1099 Today</p>
         </div>
       </div>
-      <div class="pale__blue">
+      <div class="pale__blue box box-red down">
         <div class="flex">
           <img src="./images/icon-youtube.svg" alt="">
           <p class="names">Nathan F.</p>
         </div>
         <h1>8239</h1>
         <p class="context">subscribers</p>
-        <div class="flex">
+        <div class="flex stats__today">
           <img class="arrow" src="./images/icon-down.svg" alt="">
-          <p class="today">144 Today</p>
+          <p class="today today-red">144 Today</p>
         </div>
       </div>
     </div>
   
-    <h3>Overview - Today</h3>
-    <div class="flex__space__between">
+    <h3 class="overview__today">Overview - Today</h3>
+    <div class="flex__one">
       <div class="pale__blue down">
         <div class="flex__space__between">
           <p class="views">Page views</p>
@@ -135,8 +144,8 @@
       </div>
     </div>
   
-    <div class="flex__space__between">
-      <div class="pale__blue">
+    <div class="flex__one">
+      <div class="pale__blue down">
         <div class="flex__space__between">
           <p class="views">Retweets</p>
           <img src="./images/icon-twitter.svg" alt="">
@@ -149,9 +158,9 @@
           </div>
         </div>
       </div>
-      <div class="pale__blue">
+      <div class="pale__blue down">
         <div class="flex__space__between">
-          <p class="views">Page views</p>
+          <p class="views">Likes</p>
           <img src="./images/icon-twitter.svg" alt="">
         </div>
         <div class="flex__space__between num__percent">
@@ -162,7 +171,7 @@
           </div>
         </div>
       </div>
-      <div class="pale__blue">
+      <div class="pale__blue down">
         <div class="flex__space__between">
           <p class="views">Likes</p>
           <img src="./images/icon-youtube.svg" alt="">
@@ -175,7 +184,7 @@
           </div>
         </div>
       </div>
-      <div class="pale__blue">
+      <div class="pale__blue down">
         <div class="flex__space__between">
           <p class="views">Total views</p>
           <img src="./images/icon-youtube.svg" alt="">
