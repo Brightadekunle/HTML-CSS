@@ -228,10 +228,14 @@ img {
 
 @media screen and (max-width: 768px) {
   h2 {
-    font-size: 19px;
+    font-size: 23px;
   }
   .container {
     width: 500px;
+  }
+
+  .flex .toggle__container {
+    display: block;
   }
 
   .social__media__dashboard p {
@@ -239,7 +243,9 @@ img {
   }
 
   .social__media__dashboard {
-    width: 100%;
+    width: 320px;
+    display: block;
+    transform: translateX(-60px);
   }
   .flex {
     flex-direction: column;
@@ -255,5 +261,17 @@ img {
 
   .flex__two {
     flex-direction: column;
+  }
+
+  .pale__blue {
+    width: 320px;
+  }
+
+  .box::after {
+    width: 350px;
+  }
+
+  .dark__mode {
+    color: hsl(228, 34%, 66%);
   }
 }
