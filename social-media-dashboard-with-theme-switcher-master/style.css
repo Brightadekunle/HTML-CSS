@@ -228,7 +228,7 @@ img {
 
 @media screen and (max-width: 768px) {
   h2 {
-    font-size: 23px;
+    font-size: 24px;
   }
   .container {
     width: 500px;
@@ -239,10 +239,12 @@ img {
   }
 
   .social__media__dashboard p {
-    font-size: 12px;
+    font-size: 14px;
+    padding-bottom: 10px;
   }
 
-  .social__media__dashboard {
+  .social__media__dashboard,
+  .overview__today {
     width: 320px;
     display: block;
     transform: translateX(-60px);
@@ -273,5 +275,10 @@ img {
 
   .dark__mode {
     color: hsl(228, 34%, 66%);
+  }
+
+  .border__top {
+    border-top: 1px solid white;
+    padding: 10px 0;
   }
 }
