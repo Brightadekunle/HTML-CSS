@@ -42,3 +42,9 @@ body::after {
   border-bottom-left-radius: 250px;
   border-bottom-right-radius: 250px;
 }
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
